@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tailwind stylesheed -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <!-- mac-book-section -->
+        <section class="mt-8">
+            <div class=" grid grid-cols-2 gap-0">
+                <div class="p-8">
+                    <div>
+                        <img src="images/mac.png" alt="">
+                    </div>
+                </div>
+
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold">Customize your Blue 24-inch iMac with Apple M1 chip.</h3>
+                    <div>
+                        <h3 class="mt-5 mb-4 px-2">
+                            Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU,
+                            and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports
+                            Magic Mouse Magic Keyboard-US English
+                        </h3>
+                    </div>
+
+                    <!-- memory button -->
+                    <div class="text-xs mt-6  mb-6">
+                        <h1 class="font-semibold text-xl">Memory</h1>
+                        
+                        <button id="8gb" class="hover:bg-gray-400 ... border border-black px-3 rounded py-2">8GB unified memory</button>
+
+                        <button id="16gb" class="hover:bg-gray-400 ... border border-black px-3 rounded py-2">16GB unified memory</button>
+                    </div>
+
+                    <!-- Storage button -->
+                    <h1 class="font-semibold text-xl">Storage</h1>
+                    <div class="text-xs gap-1 grid    grid-cols-3 mb-6">
+                        <button id="256gb" class="hover:bg-gray-400 ... border border-black px-1 rounded py-2">256GB SSD storage</button>
+
+                        <button id="512gb" class="hover:bg-gray-400 ... border border-black px-1 rounded py-2">512GB SSD storage</button>
+
+                        <button id="1tb" class="hover:bg-gray-400 ... border border-black px-1 rounded py-2">1TB SSD storage</button>
+                    </div>
+
+                    <!-- delivery button -->
+                    <div class="text-xs mb-6">
+                        <h1 class="font-semibold text-xl">Choose your delivery option</h1>
+                        
+                        <button id="free-delivery" class="hover:bg-gray-400 ... border border-black px-1 rounded py-2">Friday,Aug 25 FREE Prime Delivery</button>
+
+                        <button id="paid-delivery" class="hover:bg-gray-400 ... border border-black px-1 rounded py-2">Friday,Aug 21 Delivery charge $20</button>
+                    </div>
+
+                    <!-- price section -->
+                    <section class="divide-y ">
+                        <div class="grid grid-cols-2 mb-6 font-semibold text-xl">
+                            <h1>Best Price</h1>
+                            <h1>$<span id="best-price">1299</span></h1>
+                        </div>
+    
+                        <div class="grid grid-cols-2 mb-6 font-semibold text-xl">
+                            <h1>Extra Memory Cost</h1>
+                            <h1>$<span id="extra-memory-cost">00</span></h1>
+                        </div>
+    
+                        <div class="grid grid-cols-2 mb-6 font-semibold text-xl">
+                            <h1>Extra Storage Cost</h1>
+                            <h1>$<span id="extra-storage-cost">00</span></h1>
+                        </div>
+                        <div class="grid grid-cols-2 mb-6 font-semibold text-xl">
+                            <h1>Delivery charge</h1>
+                            <h1>$<span id="delivery-charge">00</span></h1>
+                        </div>
+                        <div class="grid grid-cols-2 mb-6 font-semibold text-xl border-black">
+                            <h1>Total Price</h1>
+                            <h1>$<span id="total-price">1299</span></h1>
+                        </div>
+                    </section>
+
+                    <!-- Pomo Code section -->
+                    <section>
+                        <h1>Add Pomo Code</h1>
+                        <div class="grid grid-cols-2">
+                            <div>
+                                 <input class="border block border-gray-400 rounded  mb-4 px-1" type="text" placeholder="">
+                            </div>
+                            <div>
+                                <button class=" hover:bg-red-700 ... bg-yellow-600 px-4 rounded mb-4 py-0 text-white pont-medium">Apply</button>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+
+       <!-- total after promo code section -->
+        <section class="grid grid-cols-3 border-t-2">
+            <div class="text-center mb-6 text-2xl font-semibold">
+            </div>
+
+            <div class="grid grid-cols-2 mb-6 font-semibold text-2xl">
+                <h1>Total Price:</h1>
+                <h1>$<span id="after-promo-total">1299</span></h1>
+            </div>
+        </section>
+
+    </main>
+    <script src="mac.js"></script>
+</body>
+
+</html>
