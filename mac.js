@@ -1,3 +1,4 @@
+// start js code
 function totalAll() {
     let bestPrice = document.getElementById('best-price');
     let bestInnerText = parseInt(bestPrice.innerText);
@@ -20,12 +21,14 @@ function totalAll() {
     afterPromoTotal.innerText = AddAll;
 }
 
+// product function
 function productsHare(productsText, cost) {
     let productHare = document.getElementById(productsText);
     let productHareInnerText = parseInt(productHare.innerText = cost);
     totalAll();
 }
-
+ 
+// discount promo function
 function promocode() {
     let inputHareID = document.getElementById('inputHareID');
     let inputHareIDValue = inputHareID.value;
@@ -38,6 +41,7 @@ function promocode() {
     }
 }
 
+// all functional caller 
 document.getElementById('8gb').addEventListener('click', function() {
     productsHare('extra-memory-cost', 0);
 });
