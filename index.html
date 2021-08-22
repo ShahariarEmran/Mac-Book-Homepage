@@ -6,14 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- tailwind stylesheed -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
     <header></header>
     <main>
-        <!-- mac-book-section -->
         <section class="mt-8">
             <div class=" grid grid-cols-2 gap-0">
                 <div class="p-8">
@@ -91,10 +89,10 @@
                         <h1>Add Pomo Code</h1>
                         <div class="grid grid-cols-2">
                             <div>
-                                 <input class="border block border-gray-400 rounded  mb-4 px-1" type="text" placeholder="">
+                                 <input id="inputHareID" class="border block border-gray-400 rounded  mb-4 px-1" type="text" placeholder="">
                             </div>
                             <div>
-                                <button class=" hover:bg-red-700 ... bg-yellow-600 px-4 rounded mb-4 py-0 text-white pont-medium">Apply</button>
+                                <button onclick="promocode()" class=" hover:bg-red-700 ... bg-yellow-600 px-4 rounded mb-4 py-0 text-white pont-medium">Apply</button>
                             </div>
                         </div>
                     </section>
@@ -103,7 +101,7 @@
             </div>
         </section>
 
-       <!-- total after promo code section -->
+       <!-- total after promo code -->
         <section class="grid grid-cols-3 border-t-2">
             <div class="text-center mb-6 text-2xl font-semibold">
             </div>
